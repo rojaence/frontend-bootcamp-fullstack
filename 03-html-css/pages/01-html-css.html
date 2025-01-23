@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Html con css inline</title>
+</head>
+
+<style>
+  section {
+    background-color: antiquewhite;
+    padding: 1rem;
+  }
+</style>
+
+<body>
+  <main>
+    <p style="background-color: #2f2f2f; color: aliceblue; padding: 1rem;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, vero dicta magni blanditiis similique cum libero corporis odit fugit expedita hic non eligendi sapiente voluptatem enim ipsum magnam eveniet exercitationem.
+      <span style="color: rgb(50, 218, 72);">texto en verde</span>
+    </p>
+
+    <p style="font-weight: bold;">Párrafo en negrita</p>
+
+    <section class="section">
+      <h2 class="section__title">Párrafo con estilo desde etiqueta style</h2>
+      <p class="section__copy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit tenetur necessitatibus laborum cumque, enim eligendi debitis earum vero accusamus, quasi voluptate delectus perferendis quis repellendus, fugiat consequatur assumenda minima dolores?</p>      
+    </section>
+
+    <section class="section section--border">
+      <h2 class="section__title section__title--italic" >Párrafo con estilo desde class</h2>
+      <p class="section__copy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit tenetur necessitatibus laborum cumque, enim eligendi debitis earum vero accusamus, quasi voluptate delectus perferendis quis repellendus, fugiat consequatur assumenda minima dolores?</p>      
+    </section>
+
+    <article class="card">
+      <img class="card__image" src="../../assets/wallpaper.jpg" alt="wallpaper">
+      <h2 class="card__title">Wallpaper</h2>
+      <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, iure tempore quisquam laudantium impedit adipisci rem, dolor placeat accusantium mollitia quam voluptate est iusto vitae dolores qui ratione alias molestias?</p>
+    </>
+  </main>
+</body>
+</html>

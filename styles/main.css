@@ -1,10 +1,26 @@
 :root {
-  font-family: sans-serif;
+  font-family: sans-serif;  
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  padding: .5rem;
 }
 
 
 header {
   padding: .5rem;
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 245, 233);
+  box-shadow: 5px 5px 5px rgba(78, 78, 78, 0.2);
+}
+
+.title {
+  margin: 0;
 }
 
 .main-menu {
@@ -12,15 +28,18 @@ header {
   list-style: none;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.main-menu__item {
   a {
     text-decoration: none;
-    background-color: rgba(78, 78, 78, 0.1);
+    background-color: rgba(172, 172, 172, 0.1);
     padding: .3rem .6rem;
     border-radius: 1rem;
     transition: background-color .2s;
 
     &:hover {
-      background-color: rgba(78, 78, 78, 0.2);
+      background-color: rgba(102, 200, 218, 0.4);
     }
   }
 }
