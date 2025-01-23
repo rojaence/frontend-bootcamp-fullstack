@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/main.css">
+    <title>Formularios</title>
+</head>
+<body>
+  <header class="header">
+    <h2 class="title">
+        Menu Html
+    </h2>
+    <ul class="main-menu">
+        <li>
+            <a href="./../01-html-fundamentals/01-text-elements.html">Elementos de texto</a> 
+        </li>
+        <li>
+            <a href="./../01-html-fundamentals/02-control-elements.html">Elementos de control</a>
+        </li>
+        <li>
+            <a href="./../01-html-fundamentals/03-list-tables.html">Tablas y listas</a>
+        </li>
+        <li>
+            <a href="./../02-layout/01-containers.html">Contenedores</a>
+        </li>
+    </ul>
+  </header>
+    <div id="contenedorTitulo">
+        <center>
+            <h2>
+                Formularios
+            </h2>
+        </center>
+    </div>
+    <main id="contenedorMaestro">
+        <div id="tituloFormulario">
+            <center>
+                <h3>
+                    Formulario persona
+                </h3>
+            </center>
+        </div>
+        <div id="formulario">
+            <center>
+                <form method="get" autocomplete="off">
+                    <label for="txtNombre">Nombre:</label>
+                    <input type="text" name="txtNombre" id="txtNombre" required placeholder="Ingresa tu nombre">
+                    <br>
+                    <br>
+                    <label for="txtApellido">Apellido:</label>
+                    <input type="text" name="txtApellido" id="txtApellido" required placeholder="Ingresa tu apellido">
+                    <br>
+                    <br>
+                    <label for="dateFechaNacimiento">Fecha de nacimiento:</label>
+                    <input type="date" name="dateFechaNacimiento" required id="dateFechaNacimiento">
+                    <br>
+                    <br>
+                    <label for="dateFechaNacimiento">Fecha de ingreso:</label>
+                    <input type="date" name="dateFechaNacimiento" value="2025-01-21" required readonly id="dateFechaNacimiento">
+                    <br>
+                    <br>
+                    <label for="txtEmail">Email:</label>
+                    <input type="email" name="txtEmail" id="txtEmail" required placeholder="Ingresa tu email">
+                    <br>
+                    <br>
+                    <label for="txtEmail">Contrase&ntilde;a:</label>
+                    <input type="password" name="txtpassword" id="txtpassword" required placeholder="Ingresa tu contrase&ntilde;a">
+                    <br>
+                    <br>
+                    <button type="submit">Guardar</button>
+                </form>
+            </center>
+        </div>
+    </main>
+</body>
+</html>

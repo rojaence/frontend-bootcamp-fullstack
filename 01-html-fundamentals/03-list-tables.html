@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/main.css">
+    <title>Tablas y listas</title>
+</head>
+<body>
+  <header class="header">
+    <h2 class="title">
+        Menu Html
+    </h2>
+    <ul class="main-menu">
+        <li>
+            <a href="./../01-html-fundamentals/01-text-elements.html">Elementos de texto</a> 
+        </li>
+        <li>
+            <a href="./../01-html-fundamentals/02-control-elements.html">Elementos de control</a>
+        </li>
+        <li>
+            <a href="./../01-html-fundamentals/03-list-tables.html">Tablas y listas</a>
+        </li>
+        <li>
+            <a href="./../02-layout/01-containers.html">Contenedores</a>
+        </li>
+    </ul>
+  </header>
+    <h3>Listas</h3>
+    <!-- Listas ordenadas -->
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li> 
+        <ol>
+            <li> item nn</li>
+        </ol>
+        <li>item 3</li> 
+    </ol>
+
+    <!-- Listas no ordenadas -->
+    <ul>
+        <li>item x</li>
+        <li>item abc</li> 
+        <li>item cualquier cosa</li>
+        <ul>
+            <li>elemento random</li>
+            <ul>
+                <li>elemento x</li>
+            </ul>
+        </ul>
+    </ul>
+
+    <div style="border: solid black 1px;" ></div>
+
+    <h3>  tablas </h3>
+
+    <table style="border: solid black 1px;">
+        <caption>
+            <b>
+                Descripcion de la tabla
+            </b>
+        </caption>
+        <!-- ENCABEZADO: Fila con los nombres de las columnas -->
+         <thead> <!-- THEAD: elemento de bloque que contiene los elementos del encabezado -->
+             <!-- TH: Elemento del encabezado  -->
+            <th style="border: solid black 1px;"> 
+                Columna 1
+            </th>
+            <th style="border: solid black 1px;"> 
+                Columna 2
+            </th>
+            <th style="border: solid black 1px;">
+                Columna 3
+            </th>
+            <th style="border: solid black 1px;" colspan="3">
+                Columna X
+            </th>
+         </thead>
+        <!-- CUERPO: El cuerpo/contenido de una tabla -->
+         <tbody style="border: solid black 1px;">
+            <tr> <!-- tr: table row :: fila de tabla -->
+                <td style="border: solid black 1px;">
+                    elemento 1
+                </td> <!-- table data -->
+                <td style="border: solid black 1px;">
+                    elemento 2
+                </td>
+                <td style="border: solid black 1px;">
+                    elemento 3
+                </td>
+                <td style="border: solid black 1px;">
+                    col11
+                </td>
+                <td style="border: solid black 1px;">
+                    col12
+                </td>
+                <td style="border: solid black 1px;">
+                    col12
+                </td>
+            </tr>
+            <tr> <!-- tr: table row :: fila de tabla -->
+                <td style="border: solid black 1px;">
+                    elemento n1
+                </td> <!-- table data -->
+                <td style="border: solid black 1px;">
+                    elemento n2
+                </td>
+                <td style="border: solid black 1px;">
+                    elemento n3
+                </td>
+                <td style="border: solid black 1px;">
+                    col11
+                </td>
+                <td style="border: solid black 1px;">
+                    col12
+                </td>
+                <td style="border: solid black 1px;">
+                    col12
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="border: solid black 1px;">
+                    total
+                </td>
+                <td style="border: solid black 1px;">
+                    valor x
+                </td>
+                <td style="border: solid black 1px;">
+                    valor y
+                </td>
+                <td style="border: solid black 1px;">
+                    valor z
+                </td>
+                <td style="border: solid black 1px;">
+                    <input type="button" value="Op1">
+                </td>
+            </tr>
+            <tr>
+                <td style="border: solid black 1px;">
+                    valor 1
+                </td>
+                <td style="border: solid black 1px;">
+                    valor 2
+                </td>
+                <td style="border: solid black 1px;">
+                    valor 3
+                </td>
+                <td style="border: solid black 1px;">
+                    <label for="valor1">Valor 1</label>
+                    <input type="checkbox" name="valor1" id="valor1" >
+                </td>
+            </tr>
+         </tbody>
+    </table>
+
+</body>
+</html>
