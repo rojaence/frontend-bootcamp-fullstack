@@ -12,7 +12,7 @@
   --white: #fff;
   --success-color: rgb(26, 143, 55);
   --success-color-rgb-value: 26, 143, 55; 
-  --error-color: #d84c4c;
+  --error-color: rgb(216, 76, 76);
 }
 
 body {

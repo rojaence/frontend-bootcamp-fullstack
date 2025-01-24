@@ -94,4 +94,50 @@
   border-radius: inherit;
 }
 
+.card--avatars {
+  position: relative;
+}
 
+
+.floating-avatars {
+  display: flex;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  background-color: var(--secondary-bg);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  .icon {
+    font-size: 1.8rem;
+    color: var(--white);
+  }
+}
+
+.avatar:nth-child(1) {
+  background-color: var(--primary-color);
+}
+
+.avatar:nth-child(2) {
+  transform: translateX(-4px);
+  background-color: var(--success-color);
+}
+.avatar:nth-child(3) {
+  transform: translateX(-8px);
+  background-color: var(--error-color);
+}
+.avatar:nth-child(4) {
+  transform: translateX(-12px);
+}
+
+.avatar:last-child {
+  .icon {
+    color: var(--dark-gray);
+    font-size: 1.2rem;
+  }
+}
