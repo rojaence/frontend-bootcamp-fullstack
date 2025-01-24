@@ -1,0 +1,97 @@
+#dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.sheet {
+  background-color: var(--secondary-bg);
+  border-radius: .8rem;
+  padding: 2rem;
+}
+
+#main-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .5rem;
+}
+
+#main-progress {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: .8rem;
+  padding: .8rem;
+}
+
+.card__header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.card__footer {
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+  border-top: 1px solid var(--secondary-bg);
+  padding-top: .5rem;
+}
+
+.card__title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card__body {
+  margin: .2rem 0 1.5rem 0;
+}
+
+.chip {
+  padding: .4rem .8rem;
+  border-radius: 2rem;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.chip--success {
+  background-color: var(--success-color);  
+}
+
+.chip--error {
+  background-color: var(--error-color);  
+}
+
+
+.progress {
+  position: relative;
+  z-index: 10;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.progress__label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.progress__bar {
+  position: absolute;
+  width: 58%;
+  height: 100%;
+  background-color: rgba(var(--success-color-rgb-value), 0.4);
+  left: 0;
+  top: 0;
+  z-index: -10;
+  border-radius: inherit;
+}
+
+
