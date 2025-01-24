@@ -21,6 +21,11 @@ body {
   padding: 1rem;
 }
 
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .subtitle {
   font-size: 1.2rem;
   margin: 0;
@@ -99,3 +104,6 @@ body {
   }
 }
 
+.icon-svg {
+  fill: var(--white);
+}

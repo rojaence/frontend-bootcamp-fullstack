@@ -82,7 +82,10 @@
           </footer>
           <div class="floating-avatars">
             <div class="avatar">
-              <span class="mdi mdi-account icon"></span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="icon-svg" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+              <!-- <span class="mdi mdi-account icon"></span> -->
             </div>
             <div class="avatar">
               <span class="mdi mdi-account icon"></span>
@@ -98,7 +101,18 @@
         <article class="card progress">
           <h2 class="subtitle">Progreso</h2>
           <p class="progress__label">58% Completado</p>
-          <div class="progress__bar"></div>
+          <div class="progress__bar">
+            <div class="progress__break">
+              Break
+              <div class="progress__dot"></div>
+            </div>
+          </div>
+
+          <div class="user-avatar">
+            <span class="mdi mdi-account icon"></span>
+            <div id="notifications">6</div>
+          </div>
+          
         </article>
       </section>
   
