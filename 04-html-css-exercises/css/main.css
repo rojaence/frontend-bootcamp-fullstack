@@ -18,12 +18,12 @@
 body {
   margin: 0;
   min-height: 100vh;
-  padding: 1rem;
 }
 
 main {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .subtitle {
@@ -62,16 +62,20 @@ main {
 .form__field--checkbox {
   flex-direction: row-reverse;
   justify-content: start;
+  align-items: center;
   &::before {
     display: none;
   }
   &:has(input:focus) {
     background-color: transparent;
   }
+  .form__label {
+    font-size: 1rem;
+  }
 }
 
 .form__label {
-  font-size: 1rem;
+  font-size: .9rem;
   color: var(--dark-gray);
   transition: color .2s;
 }
@@ -80,7 +84,7 @@ main {
   font-size: 1.1rem;
   border: none;
   outline: none;
-  padding: .4rem .2rem;
+  /* padding: .2rem; */
 }
 
 .link {
