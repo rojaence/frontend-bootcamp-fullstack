@@ -111,3 +111,12 @@ main {
 .icon-svg {
   fill: var(--white);
 }
+
+.image {
+  max-width: 100%;
+}
+
+.rounded {
+  border-radius: 1rem;
+  object-fit: fill;
+}
