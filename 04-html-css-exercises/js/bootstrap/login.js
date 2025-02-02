@@ -15,33 +15,8 @@ loginForm.addEventListener('submit', (e) => {
   const password = form.get('password')
 
   const validation = AuthService.validate(email, password)
-  console.log(validation)
-  if (validation.errors.email) {
-    loginForm.querySelector('#email-field').querySelector('.invalid-feedback').textContent = validation.errors.email
-  }
-
-  if (validation.errors.password) {
-    loginForm.querySelector('#password-field').querySelector('.invalid-feedback').textContent =
-      validation.errors.password
-  }
-
-  const passwordField = loginForm.querySelector('#password-field')
-  if (validation.errors.password) {
-    passwordField.querySelector('.invalid-feedback').textContent = validation.errors.password
-    passwordField.querySelector('input').classList.add('is-invalid')
-  } else {
-    passwordField.querySelector('input').classList.remove('is-invalid')
-    passwordField.querySelector('input').classList.add('is-valid')
-  }
-
-  const emailField = loginForm.querySelector('#email-field')
-  if (validation.errors.email) {
-    emailField.querySelector('.invalid-feedback').textContent = validation.errors.email
-    emailField.querySelector('input').classList.add('is-invalid')
-  } else {
-    emailField.querySelector('input').classList.remove('is-invalid')
-    emailField.querySelector('input').classList.add('is-valid')
-  }
+  setEmailInputError()
+  setPasswordInputError()
   if (validation.success) {
     window.location.href = 'http://127.0.0.1:5500/04-html-css-exercises/pages/dashboard.html'
   }
@@ -49,8 +24,14 @@ loginForm.addEventListener('submit', (e) => {
 })
 
 document.querySelector('#user-password').addEventListener('input', (e) => {
-  const validation = AuthService.validate(emailInput.value, passwordInput.value)
+  setPasswordInputError()
+})
+document.querySelector('#user-email').addEventListener('input', (e) => {
+  setEmailInputError()
+})
 
+const setPasswordInputError = () => {
+  const validation = AuthService.validate(emailInput.value, passwordInput.value)
   const passwordField = loginForm.querySelector('#password-field')
   if (validation.errors.password) {
     passwordField.querySelector('.invalid-feedback').textContent = validation.errors.password
@@ -59,8 +40,9 @@ document.querySelector('#user-password').addEventListener('input', (e) => {
     passwordField.querySelector('input').classList.remove('is-invalid')
     passwordField.querySelector('input').classList.add('is-valid')
   }
-})
-document.querySelector('#user-email').addEventListener('input', (e) => {
+}
+
+const setEmailInputError = () => {
   const validation = AuthService.validate(emailInput.value, passwordInput.value)
   const emailField = loginForm.querySelector('#email-field')
   if (validation.errors.email) {
@@ -70,4 +52,4 @@ document.querySelector('#user-email').addEventListener('input', (e) => {
     emailField.querySelector('input').classList.remove('is-invalid')
     emailField.querySelector('input').classList.add('is-valid')
   }
-})
+}
