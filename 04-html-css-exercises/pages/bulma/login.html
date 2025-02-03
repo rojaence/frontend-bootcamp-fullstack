@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+  >
+  <title>Iniciar sesión</title>
+</head>
+
+<style>
+  :root {
+    color-scheme: light dark;
+  }
+</style>
+
+<body class="hero is-fullheight has-background-grey-lighter	">
+  <main class="container is-flex is-justify-content-center is-flex-direction-column">
+    <section class="card mx-auto p-4" style="min-width: 400px;">
+      <header class="has-text-centered">
+        <span class="icon is-large">
+          <i class="mdi mdi-login" style="font-size: 3rem;"></i>
+        </span>
+        <h1 class="title is-4">Iniciar sesión</h1>
+      </header>
+      <div class="card-content">
+        <form id="login-form" method="post" novalidate>
+          <div class="field" id="email-field">
+            <label for="user-email" class="label">Email</label>
+            <div class="control">
+              <input id="user-email" type="email" class="input" name="email" required>
+            </div>
+            <p class="help is-danger invalid-feedback"></p>
+          </div>
+          <div class="field" id="password-field">
+            <label for="user-password" class="label">Contraseña</label>
+            <div class="control">
+              <input id="user-password" type="password" class="input" name="password" required>
+            </div>
+            <p class="help is-danger invalid-feedback"></p>
+          </div>
+          <div class="field">
+            <label class="checkbox">
+              <input id="user-remember" type="checkbox"> Recordar usuario
+            </label>
+          </div>
+          <a href="../reset-password.html" class="is-block has-text-centered mb-3">Recuperar contraseña</a>
+          <div class="field">
+            <button type="submit" class="button is-primary is-fullwidth">Acceder</button>
+          </div>
+        </form>
+      </div>
+      <footer class="card-footer mt-2 pt-3 is-justify-content-center">
+        <p class="is-link">¿No tiene una cuenta? <a href="#">Regístrarse</a></p>
+      </footer>
+    </section>
+  </main>
+  <script src="../../js/bulma/login.js" type="module"></script>
+</body>
+</html>
