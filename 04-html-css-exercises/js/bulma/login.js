@@ -36,10 +36,12 @@ const setPasswordInputError = () => {
     passwordField.querySelector('.invalid-feedback').textContent = validation.errors.password
     passwordField.querySelector('input').classList.add('is-danger')
     passwordField.querySelector('.invalid-feedback').classList.remove('is-hidden')
+    passwordField.querySelector('input').classList.remove('is-success')
   } else {
     console.log('vlido')
     passwordField.querySelector('.invalid-feedback').classList.add('is-hidden')
     passwordField.querySelector('input').classList.remove('is-danger')
+    passwordField.querySelector('input').classList.add('is-success')
   }
 }
 
@@ -50,8 +52,10 @@ const setEmailInputError = () => {
     emailField.querySelector('.invalid-feedback').textContent = validation.errors.email
     emailField.querySelector('.invalid-feedback').classList.remove('is-hidden')
     emailField.querySelector('input').classList.add('is-danger')
+    emailField.querySelector('input').classList.remove('is-success')
   } else {
     emailField.querySelector('input').classList.remove('is-danger')
+    emailField.querySelector('input').classList.add('is-success')
     emailField.querySelector('.invalid-feedback').classList.add('is-hidden')
   }
 }
